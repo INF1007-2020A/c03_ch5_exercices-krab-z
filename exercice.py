@@ -20,11 +20,19 @@ def prime_integer_summation() -> int:
 
 
 def factorial(number: int) -> int:
-    return 0
+    result=1
+    if number!=0 :
+       for i in range(number):
+           result*=(number-1)
+    return result
 
 
 def use_continue() -> None:
-    pass
+    for chiffre in range(1,11):
+        if chiffre==5:
+            continue #ou pass puis else : print(chiffre)
+        print(chiffre)
+    
 
 
 def main() -> None:
